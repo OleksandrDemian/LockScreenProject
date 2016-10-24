@@ -88,11 +88,4 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Is not active", Toast.LENGTH_LONG).show();
         }
     }
-
-    private void takePhoto(){
-        /*TakePhoto photo = new TakePhoto(this, 0, getApplicationContext());
-        SurfaceView ads = (SurfaceView)findViewById(R.id.surfaceView);
-        photo.setSurface(ads.getHolder());
-        photo.start();*/
-    }
 }

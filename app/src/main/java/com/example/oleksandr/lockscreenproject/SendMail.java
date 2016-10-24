@@ -2,8 +2,6 @@ package com.example.oleksandr.lockscreenproject;
 
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.util.Log;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -44,7 +42,6 @@ public class SendMail extends AsyncTask<String, Void, Void> {
             urlConnection.connect();
             InputStream inputStream = urlConnection.getInputStream();
             if (inputStream == null) {
-                Log.e("Errore", "Nothing");
                 return null;
             }
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
