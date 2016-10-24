@@ -20,9 +20,10 @@ public class TakePhoto extends Thread {
         /*
         Se c'è qulcosa che non va, poi cambiare tutto quello di qui hai bisogno;
         callback.onPhotoTaken(...) - chiama quando hai scatato la foto;
-        Per farlo funzionare basta che scomenti TakePhoto takePhoto = new TakePhoto(this, CameraMode.FRONT) e commenti il resto;
+        Per farlo funzionare basta che scomenti TakePhoto takePhoto = new TakePhoto(this, CameraMode.FRONT)
+                in PasswordReceiver(line 37) e commenti il resto;
         Non ho fatto la roba per cambiare CameraMode, quindi cambialo a mano;
-        Per leggere la risposta dal server leggi la comandLine "Buffer: ..." (SendMail line 56);
+        Per leggere la risposta dal server leggi la comandLine "Buffer: ..." (SendMail line 49);
             Server risposte:
                 Sent: la email inviata;
                 Photo1/2 received: photo1/2 ricevuta;

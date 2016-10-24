@@ -45,10 +45,12 @@ public class SendMail extends AsyncTask<String, Void, Void> {
                 return null;
             }
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+
+            //Leggi la risposta del server
             String result = "";
             String temp = "";
             while((temp = reader.readLine()) != null){
-                result += temp;
+                result += temp + "\n";
             }
             System.out.println("Buffer: " + result);
 
