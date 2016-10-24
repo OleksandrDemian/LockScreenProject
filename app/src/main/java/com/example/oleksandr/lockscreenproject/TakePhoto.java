@@ -1,5 +1,8 @@
 package com.example.oleksandr.lockscreenproject;
 
+import android.hardware.Camera;
+import android.util.Log;
+
 /**
  * Created by Oleksandr on 21/10/2016.
  */
@@ -16,6 +19,7 @@ public class TakePhoto extends Thread {
 
     @Override
     public void run() {
+
 
         /*
         Se c'è qulcosa che non va, poi cambiare tutto quello di qui hai bisogno;
